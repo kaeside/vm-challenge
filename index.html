@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Vayner Media Album Search</title>
+</head>
+<body>
+    <div class="tables">
+        <div class="table">
+            <p class="user"></p>
+            <ul class="album drop-target">
+                <li>
+                    <button class="album-title" draggable="true" ondragstart="dragstart_handler(event);"></button>
+                </li>
+                <li>
+                    <button class="album-id" draggable="true" ondragstart="dragstart_handler(event);"></button>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="table">
+            <p class="user"></p>
+            <ul class="album">
+                <li class="album-title"></li>
+                <li class="album-id"></li>
+            </ul>
+        </div> -->
+    </div>
+
+    <script src="./jquery-3.1.0.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

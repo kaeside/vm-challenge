@@ -1,0 +1,18 @@
+.table {
+    outline: solid black;
+    max-width: 25vh;
+}
+
+.user {
+    text-align: center;
+}
+
+.album {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.album-title, .album-id {
+    outline: solid black 0.5px;
+}
