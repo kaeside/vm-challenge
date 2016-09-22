@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Vayner Media Album Search</title>
+    <title>Vayner Media Album Table</title>
 </head>
+
 <body>
-    <div class="tables">
-        <div class="table">
-            <p class="user"></p>
-            <ul class="album drop-target">
-                <li>
-                    <button class="album-title" draggable="true" ondragstart="dragstart_handler(event);"></button>
-                </li>
-                <li>
-                    <button class="album-id" draggable="true" ondragstart="dragstart_handler(event);"></button>
-                </li>
-            </ul>
+    <div class="outline">
+        <h1>Vayner Media Album Table</h1>
+        <h3>Drag an Album Title Or ID To The Opposite Table</h3>
+        <div class="tables">
+            <div class="table table-one">
+                <p class="user user-one"></p>
+                <ul class="album album-one" id="drop-target">
+                    <li class="album-title album-title-one" id="drag-target" draggable="true">
+                    </li>
+                    <li class="album-id album-id-one" id="drag-target" draggable="true">
+                    </li>
+                </ul>
+            </div>
+            <div class="table table-two">
+                <p class="user user-two"></p>
+                <ul class="album album-one" id="drop-target">
+                    <li class="album-title album-title-two" id="drag-target" draggable="true"></li>
+                    <li class="album-id album-id-two" id="drag-target" draggable="true"></li>
+                </ul>
+            </div>
+
         </div>
-        <!-- <div class="table">
-            <p class="user"></p>
-            <ul class="album">
-                <li class="album-title"></li>
-                <li class="album-id"></li>
-            </ul>
-        </div> -->
     </div>
 
     <script src="./jquery-3.1.0.min.js"></script>
     <script src="./app.js"></script>
 </body>
+
 </html>
